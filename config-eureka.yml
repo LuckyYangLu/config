@@ -6,7 +6,13 @@ spring:
 ---
 server: 
   port: 7001
- 
+
+spring: 
+  profiles: dev
+  application: 
+    name: microservicecloud-config-eureka-client
+  
+  
 eureka: 
   instance:
     hostname: eureka7001.com #eureka服务端的实例名称
@@ -18,7 +24,11 @@ eureka:
 ---
 server: 
   port: 7002
- 
+  
+spring: 
+  profiles: dev
+  application: 
+    name: microservicecloud-config-eureka-client
 eureka: 
   instance:
     hostname: eureka7001.com #eureka服务端的实例名称
